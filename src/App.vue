@@ -2,13 +2,15 @@
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
+// import AppHero from './components/AppHero.vue';
 
 
 export default {
   components: {
     AppHeader,
     AppMain,
-    AppFooter
+    AppFooter,
+    // AppHero
   },
   data() {
     return {
@@ -27,6 +29,7 @@ export default {
 
 <template>
   <AppHeader :logo="logo" :menu-items="menuItems" />
+  <!-- <AppHero /> -->
   <AppMain />
   <AppFooter />
 </template>
