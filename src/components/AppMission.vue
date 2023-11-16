@@ -59,10 +59,11 @@ h2 {
     flex: 1;
     background-color: #E2615F;
     color: #fff;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 70px 50px;
+
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
 }
 
 .title-with-border {
