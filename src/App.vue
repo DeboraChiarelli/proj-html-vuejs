@@ -1,16 +1,17 @@
 <script>
 import AppHeader from './components/AppHeader.vue';
 import AppMission from './components/AppMission.vue';
-import AppFooter from './components/AppFooter.vue';
 import AppValues from './components/AppValues.vue';
-
+import AppCauses from './components/AppCauses.vue';
+import AppFooter from './components/AppFooter.vue';
 
 export default {
   components: {
     AppHeader,
     AppMission,
     AppFooter,
-    AppValues
+    AppValues,
+    AppCauses
   },
   data() {
     return {
@@ -31,6 +32,7 @@ export default {
   <AppHeader :logo="logo" :menu-items="menuItems" />
   <AppMission />
   <AppValues />
+  <AppCauses />
   <AppFooter />
 </template>
 

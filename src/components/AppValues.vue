@@ -48,7 +48,7 @@
 
 <style lang="scss" scoped>
 .bg-image {
-    height: 700px;
+    min-height: 700px;
     background-image: url('../../public/HelloIMG1669149393797.jpeg');
     background-size: cover;
     background-position: center;
