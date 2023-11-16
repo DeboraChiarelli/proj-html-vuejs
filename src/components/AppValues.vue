@@ -2,7 +2,6 @@
 <template>
     <div class="bg-image">
         <div class="content-section">
-            <!-- Contenuto della parte bianca -->
             <h2 class="title-with-border">Our values</h2>
             <p>Think bigger, act bigger</p>
         </div>
