@@ -40,6 +40,11 @@ export default {
     </div>
 </template>
 <style lang="scss" scoped>
+h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
 .bg-image {
     height: 800px;
     background-image: url('../../public/HelloIMG1669149393797.jpeg');
@@ -77,6 +82,7 @@ nav ul {
 
 nav li {
     margin-right: 20px;
+    text-transform: uppercase;
 }
 
 nav li.highlighted {
@@ -113,6 +119,7 @@ nav li.highlighted {
     color: #fff;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    text-transform: uppercase;
 }
 
 .yellow-border-button {
