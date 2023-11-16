@@ -3,6 +3,7 @@ import AppHeader from './components/AppHeader.vue';
 import AppMission from './components/AppMission.vue';
 import AppValues from './components/AppValues.vue';
 import AppCauses from './components/AppCauses.vue';
+import AppArticles from './components/AppArticles.vue';
 import AppFooter from './components/AppFooter.vue';
 
 export default {
@@ -11,7 +12,8 @@ export default {
     AppMission,
     AppFooter,
     AppValues,
-    AppCauses
+    AppCauses,
+    AppArticles,
   },
   data() {
     return {
@@ -33,6 +35,7 @@ export default {
   <AppMission />
   <AppValues />
   <AppCauses />
+  <AppArticles />
   <AppFooter />
 </template>
 
