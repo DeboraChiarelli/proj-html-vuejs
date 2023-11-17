@@ -1,11 +1,6 @@
 <script>
-// import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-// import { faFacebook, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 export default {
-    // components: {
-    //     FontAwesomeIcon,
-    // },
     props: {
         // Definisco la prop per le voci del menu
         menuItemsFooter: {
@@ -15,12 +10,12 @@ export default {
     },
     data() {
         return {
-            // menuIcons: [
-            //     { icon: faFacebook, alt: 'Icon 1' },
-            //     { icon: faInstagram, alt: 'Icon 2' },
-            //     { icon: faTwitter, alt: 'Icon 3' },
-            //     { icon: faYoutube, alt: 'Icon 4' },
-            // ],
+            icons: [
+                { item: ['fab', 'facebook'] },
+                { item: ['fab', 'instagram'] },
+                { item: ['fab', 'twitter'] },
+                { item: ['fab', 'youtube'] },
+            ],
         };
     },
 };
@@ -36,10 +31,11 @@ export default {
                     <a :href="menuItemFooter.link">{{ menuItemFooter.text }}</a>
                 </li>
             </ul>
-            <!-- <div class="icon-container">
-                            <font-awesome-icon v-for="(icon, iconIndex) in menuIcons" :key="iconIndex" :icon="icon.icon"
-                                :alt="icon.alt" />
-                        </div> -->
+            <ul class="icon-container">
+                <li class="menu-icon" v-for="icon in icons">
+                    <a href="#"><font-awesome-icon :icon="icon.item" /></a>
+                </li>
+            </ul>
         </nav>
     </footer>
 </template>
@@ -52,6 +48,7 @@ export default {
     padding: 10px;
     margin: 0 auto;
     background-color: #F9F9F9;
+    flex-direction: column;
 }
 
 .items-menu {
@@ -60,11 +57,8 @@ export default {
     padding: 0;
     margin: 0;
     width: 100%; // Assicura che la larghezza sia al 100%
-}
-
-.items-menu li {
-    display: inline-block; // Permette di centrare gli elementi orizzontalmente
-    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 a {
@@ -73,9 +67,9 @@ a {
     font-size: 10px;
 }
 
-// .icon-container {
-//     display: flex;
-//     justify-content: center;
-//     margin-top: 10px; // Imposta la distanza tra le voci del menu e le icone
-// }
+.icon-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; // Imposta la distanza tra le voci del menu e le icone
+}
 </style>
