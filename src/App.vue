@@ -4,7 +4,10 @@ import AppMission from './components/AppMission.vue';
 import AppValues from './components/AppValues.vue';
 import AppCauses from './components/AppCauses.vue';
 import AppArticles from './components/AppArticles.vue';
+import AppChange from './components/AppChange.vue';
+import AppLogo from './components/AppLogo.vue';
 import AppFooter from './components/AppFooter.vue';
+
 
 export default {
   components: {
@@ -14,6 +17,8 @@ export default {
     AppValues,
     AppCauses,
     AppArticles,
+    AppChange,
+    AppLogo
   },
   data() {
     return {
@@ -24,7 +29,13 @@ export default {
         { text: 'Causes', link: '#' },
         { text: 'Journal', link: '#' },
         { text: 'Donate', link: '#' }
-      ]
+      ],
+      menuItemsFooter: [
+        { text: "Copyright 2012-2022|", link: "#" },
+        { text: "Avada Theme by ThemeFusion|", link: "#" },
+        { text: "All rights reserved|", link: "#" },
+        { text: "Powered by WordPress", link: "#" }
+      ],
     };
   }
 }
@@ -36,7 +47,9 @@ export default {
   <AppValues />
   <AppCauses />
   <AppArticles />
-  <AppFooter />
+  <AppChange />
+  <AppLogo />
+  <AppFooter :menuItemsFooter="menuItemsFooter" />
 </template>
 
 <style lang="scss">

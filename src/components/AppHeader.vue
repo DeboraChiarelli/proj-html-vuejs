@@ -131,4 +131,10 @@ nav li.highlighted {
 .border-button:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
 </style>

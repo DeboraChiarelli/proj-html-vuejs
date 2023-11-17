@@ -144,8 +144,10 @@ img {
 .banner-articles {
     display: flex;
     justify-content: center;
-    max-width: 100%;
     margin-top: 40px;
+    width: 100%;
+    padding-bottom: 80px;
+
 }
 
 .title-articles {
