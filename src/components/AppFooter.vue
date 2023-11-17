@@ -71,5 +71,11 @@ a {
     display: flex;
     justify-content: center;
     margin-top: 10px; // Imposta la distanza tra le voci del menu e le icone
+
+}
+
+.menu-icon a {
+    padding: 10px;
+    color: #FEC96B;
 }
 </style>
