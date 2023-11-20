@@ -1,4 +1,5 @@
 <script>
+// Dichiarazioni di importazione
 import AppHeader from './components/AppHeader.vue';
 import AppMission from './components/AppMission.vue';
 import AppValues from './components/AppValues.vue';
@@ -8,7 +9,7 @@ import AppChange from './components/AppChange.vue';
 import AppLogo from './components/AppLogo.vue';
 import AppFooter from './components/AppFooter.vue';
 
-
+// Esportazione dei componenti
 export default {
   components: {
     AppHeader,
@@ -20,6 +21,7 @@ export default {
     AppChange,
     AppLogo
   },
+  // La funzione data restituisce un oggetto logo e array per menuItems e menuItemsFooter, che poi verranno usati nel template relativo.
   data() {
     return {
       logo: { src: './public/HelloIMG1669149314369.png', alt: 'Logo', text: '' },

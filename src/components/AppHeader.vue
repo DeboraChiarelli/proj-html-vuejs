@@ -1,7 +1,9 @@
 <script>
 
 export default {
+    // Definizione del nome del componente
     name: 'AppHeader',
+    // Dichiarazione delle proprietà ricevute dal componente genitore
     props: ['logo', 'menuItems'],
     mounted() {
         console.log('menuItems:', this.menuItems);
@@ -18,8 +20,10 @@ export default {
                 </div>
                 <nav>
                     <ul>
+                        <!-- Iterazione sugli elementi del menuItems -->
                         <li v-for="(menuItem, index) in menuItems" :key="index"
                             :class="{ 'highlighted': menuItem.text === 'Donate' }">
+                            <!-- Creazione di link dinamici basati su menuItems -->
                             <a :href="menuItem.link">{{ menuItem.text }}</a>
                         </li>
                     </ul>

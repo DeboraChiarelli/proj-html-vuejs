@@ -1,3 +1,4 @@
+<script></script>
 <template>
     <div class="bg-image">
         <div class="content-section">
@@ -18,7 +19,7 @@
 
                 <div class="col-6">
                     <!-- Prima immagine con testo -->
-                    <div class="image-block">
+                    <div class="images-left">
                         <div class="image-content">
                             <img src="../../public/HelloIMG1669149318263.jpeg" alt="Image 1">
                             <div class="image-text">
@@ -29,7 +30,7 @@
                     </div>
 
                     <!-- Seconda immagine con testo -->
-                    <div class="image-block">
+                    <div class="images-left">
                         <div class="image-content">
                             <img src="../../public/HelloIMG1669149319450.jpeg" alt="Image 2">
                             <div class="image-text">
@@ -40,7 +41,7 @@
                     </div>
 
                     <!-- Terza immagine con testo -->
-                    <div class="image-block">
+                    <div class="images-left">
                         <div class="image-content">
                             <img src="../../public/HelloIMG1669149321401.jpeg" alt="Image 3">
                             <div class="image-text">
@@ -51,7 +52,7 @@
                     </div>
 
                     <!-- Quarta immagine con testo -->
-                    <div class="image-block">
+                    <div class="images-left">
                         <div class="image-content">
                             <img src="../../public/HelloIMG1669149322752.jpeg" alt="Image 4">
                             <div class="image-text">
@@ -121,7 +122,7 @@ img {
     color: #FEC96B;
 }
 
-.image-block {
+.images-left {
     margin-bottom: 29px;
 }
 
@@ -147,6 +148,7 @@ img {
     margin-top: 40px;
     width: 100%;
     padding-bottom: 80px;
+    // max-width: 800px;
 
 }
 

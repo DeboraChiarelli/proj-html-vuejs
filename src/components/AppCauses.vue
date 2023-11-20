@@ -55,9 +55,6 @@
     white-space: nowrap;
 }
 
-.p {
-    margin-bottom: 20px;
-}
 
 .columns {
     display: flex;
